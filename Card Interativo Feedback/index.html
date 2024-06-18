@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FeedBack</title>
+  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <div class="card">
+      <div class="notas">
+        <img src="img/icon-star.svg" alt="Desenho de uma estrela">
+        <main>
+          <h1>Como fomos?</h1>
+          <p>Por favor, deixe-nos saber como saimos lidando com sua solicitação de suporte! Todo feedback é apreciado para nós ajudar a melhorar nossas ofertas.</p>
+        </main>
+        <section>
+          <div class="divitem">
+            <input type="radio" name="item" id="um" value="1">
+            <label for="um">1</label>
+          </div>
+          <div class="divitem">
+            <input type="radio" name="item" id="dois" value="2">
+            <label for="dois">2</label>
+          </div>
+          <div class="divitem">
+            <input type="radio" name="item" id="tres" value="3">
+            <label for="tres">3</label>
+          </div>
+          <div class="divitem">
+            <input type="radio" name="item" id="quatro" value="4">
+            <label for="quatro">4</label>
+          </div>
+          <div class="divitem">
+            <input type="radio" name="item" id="cinco" value="5">
+            <label for="cinco">5</label>
+          </div>
+        
+        </section>
+        <div class="botao">
+          <input class="btn" type="button" value="Avaliar" onclick="avaliar()">
+        </div>
+      </div>
+
+      <div class="feedback">
+        <img  class="back" src="img/arrow_back.svg" alt="Seta voltando" onclick="back()">
+        <img class="img" src="img/illustration-thank-you.svg" alt="Desenho de um celular confirmando a solicitação">
+        <p class="resultado">Você escolheu <strong id="select">x</strong> de 5</p>
+        <div>
+          <h1>OBRIGADO(A)!</h1>
+          <p>Nós apreciamos você ter tirado um tempinho para nos dar um retorno. Sempre que precisar de suporte, não hesite em nos contactar!</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

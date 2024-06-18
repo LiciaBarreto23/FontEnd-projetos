@@ -1,0 +1,163 @@
+.descrição-bg {
+  background-color: var(--cor-c11);
+  padding-bottom: 60px;
+}
+
+.descrição {
+  background: url(../../img/dec/bottom-left.svg) no-repeat bottom left 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+.descrição-img {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.descrição-img img {
+  flex: 1;
+  min-width: 200px;
+}
+.descrição-img img:first-child {
+  min-width: 100%;
+}
+.descrição-img img:not(:first-child) {
+  cursor: pointer;
+}
+
+.descrição-conteudo {
+  display: grid;
+  gap: 40px;
+}
+
+.descrição-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  gap: 8px 12px;
+  place-items: center start;
+}
+.descrição-comprar a {
+  grid-row: span 2;
+}
+.descrição-comprar span {
+  display: flex;
+  gap: 8px;
+  background-color: var(--cor-c12);
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.descrição-comprar span img {
+  width: 16px;
+  height: 16px;
+}
+
+.descrição h2 {
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+.descrição-info ul {
+  background-color: var(--cor-c12);
+  border-radius: 4px;
+  padding: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.descrição-info img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 4px;
+}
+.descrição-info h4 {
+  margin-bottom: 8px;
+}
+
+.descrição-ficha ul{
+  background-color: var(--cor-c12);
+  border-radius: 4px;
+  padding: 32px;
+}
+.descrição-ficha li{
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0px;
+}
+.descrição-ficha li:not(:last-child){
+  border-bottom: 1px solid var(--cor-c11);
+}
+
+@media (max-width:800px){
+  .descrição{
+    background: var(--cor-c11);
+    grid-template-columns: 1fr;
+  }
+  .descrição-bg{
+    padding-bottom: 40px;
+  }
+  .descrição-conteudo{
+    gap: 24px;
+    grid-row: 1;
+  }
+}
+@media (max-width:800px){
+  .descrição-info ul{
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+/*Bicleta-page Seguro*/
+.bicicleta-seguro-bg{padding-top: 0px;
+  background-color: var(--cor-c11);
+  box-shadow: inset 0 120px var(--cor-w), inset 0 -120px var(--cor-c12);
+}
+
+.bicicleta-seguro{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.bicicleta-seguro-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bicicleta-seguro-conteudo{
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+.bicicleta-seguro p{
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+@media (max-width:1000px){
+  .bicicleta-seguro-bg{
+    background-color: var(--cor-c11);
+    box-shadow: inset 0 80px var(--cor-w), inset 0 -80px var(--cor-c12);
+  }
+  .bicicleta-seguro-conteudo{
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+}
+
+@media (max-width:800px){
+  .bicicleta-seguro-bg{
+    box-shadow:inset 0 -80px var(--cor-c12);
+  }
+  .bicicleta-seguro{
+    grid-template-columns: 1fr;
+  }
+  .bicicleta-seguro-conteudo{
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0px
+  }
+  .bicicleta-seguro-img img{
+    height: 300px;
+  }
+}

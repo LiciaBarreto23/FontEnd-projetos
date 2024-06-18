@@ -1,0 +1,98 @@
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0px 20px;
+}
+
+.none{
+  display: none;
+}
+
+/*Titulo das paginas internas*/
+.titulo-bg{
+  background: var(--cor-c11);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.titulo{
+  background: url(../../img/dec/top-right.svg) no-repeat top right 20px;
+}
+
+.titulo > h2{
+  margin-bottom: 4px;
+}
+@media (max-width:800px){
+  .titulo-bg{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .titulo > h2{
+    font-size: 1rem;
+  }
+}
+
+/*ocupar duas colunas*/
+.col-2 {
+  grid-column: span 2;
+}
+
+
+.btn{
+  padding: 16px 32px;
+  display: inline-block;
+  background: linear-gradient(#FFBF00, #F2A50C);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.10);
+
+  color: var(--cor-p5);
+  text-transform: uppercase;
+  font: 600 1.125rem/1.35 var(--fonte1); /*font1-m-b*/
+  max-width: max-content;
+  cursor: pointer;
+}
+.btn:hover{
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.btn.secundario{
+  background: var(--cor-c10);
+  color: var(--cor-w);
+}
+.btn.secundario:hover{
+  background: var(--cor-c9);
+}
+
+.btn.seta{
+  display: flex;
+  align-items: center;
+}
+.btn.seta::after{
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  background: url("../../img/icones/seta.svg");
+  margin-left: 8px;
+  transition: transform 0.2s;
+}
+.btn.seta:hover::after{
+  transform: translateX(4px);
+
+}
+
+@media (max-width:800px){
+  .btn{
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:600px){
+  .btn{
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+}
+

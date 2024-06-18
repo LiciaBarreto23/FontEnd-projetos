@@ -1,0 +1,90 @@
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/*CSS*/
+@import "./utilitarios/tipografia.css";
+@import "./utilitarios/cores.css";
+@import "./utilitarios/componentes.css";
+
+@import "./global/header.css";
+@import "./home/introducao.css";
+@import "./home/listabicicletas.css";
+@import "./home/tecnologia.css";
+@import "./home/parceiros.css";
+@import "./home/depoimento.css";
+@import "./home/seguros.css";
+@import "./global/footer.css";
+
+@import "./bicicletas/bicicletas.css";
+@import "./bicicletas/bicicleta-page.css";
+
+@import "./seguro/seguro.css";
+
+@import "./contato/contato-dados.css";
+@import "./contato/contato-formulario.css";
+@import "./contato/lojas.css";
+
+@import "./orcamento/orcamento.css";
+
+@import "./termos/termos.css";
+
+
+/*Estilos Globais*/
+:root{
+  --cor-c12: #000000;
+  --cor-c11: #111111;
+  --cor-c10: #2e2e2e;
+  --cor-c9: #404040;
+  --cor-c8: #595959;
+  --cor-c7: #717171;
+  --cor-c6: #9c9c9c;
+  --cor-c5: #b2b2b2;
+  --cor-c4: #cccccc;
+  --cor-c3: #dedede;
+  --cor-c2: #ededed;
+  --cor-c1: #f7f7f7;
+  --cor-w: #ffffff;
+  --cor-p5: #332200;
+  --cor-p4: #664400;
+  --cor-p3: #a66f00;
+  --cor-p2: #e5a30b;
+  --cor-p1: #ffbb00;
+  --fonte1: "Poppins", Arial, sans-serif;
+  --fonte2: "Roboto", Arial, sans-serif;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+img[src$=".jpg"]{
+  border-radius: 4px;
+}
+
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+html, body{
+  overflow-x: hidden !important;
+}
+
+body{
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--cor-c11);
+}
+
+ul{
+  padding: 0px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+

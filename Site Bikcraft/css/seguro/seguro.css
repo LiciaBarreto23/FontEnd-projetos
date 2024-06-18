@@ -1,0 +1,109 @@
+#seguro .seguros {
+  background: url(../../img/dec/bottom-left.svg) no-repeat bottom 40px left 20px;
+  padding: 20px 20px 120px 20px;
+}
+
+.seguro-vantagens-bg {
+  background: var(--cor-c12);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.seguro-vantagens {
+  background: url(../../img/dec/top-right.svg) no-repeat top right;
+}
+
+.seguro-vantagens h2 {
+  margin-bottom: 60px;
+}
+
+.seguro-vantagens ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 48px 32px;
+}
+
+.seguro-vantagens li img,
+.seguro-vantagens li h4 {
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1000px) {
+  .seguro-vantagens ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .seguro-vantagens h2 {
+    margin-bottom: 48px;
+  }
+  .seguro-vantagens ul {
+    grid-template-columns: 1fr;
+  }
+  .seguro-vantagens li h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+}
+
+.perguntas {
+  padding-top: 60px;
+  padding-bottom: 120px;
+}
+
+.perguntas h2 {
+  margin-bottom: 60px;
+}
+
+.perguntas .pergunta-item:nth-child(odd) {
+  background-color: var(--cor-c1);
+}
+.perguntas .pergunta-item {
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.perguntas .pergunta-item dt {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.perguntas .pergunta-item dt:before {
+  content: "";
+  display: block;
+  background-color: var(--cor-p1);
+
+  height: 8px;
+  width: 20px;
+  margin-right: 8px;
+}
+.perguntas .pergunta-item:hover dt:before {
+  width: 32px;
+  transition: width 0.3s;
+}
+
+.perguntas .pergunta-item dt::after {
+  content: "";
+  display: block;
+  background: url(../../img/icones/seta-abrir.svg) no-repeat;
+
+  height: 8px;
+  width: 20px;
+}
+
+.perguntas .pergunta-item dd {
+  padding-left: 28px;
+  margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+  .perguntas dt {
+    font: 600 1.125rem/1.35 var(--fonte1); /*fonte1-m*/
+  }
+  .perguntas dd {
+    font: 500 1rem/1.5 var(--fonte2); /*fonte2-s*/
+  }
+}
