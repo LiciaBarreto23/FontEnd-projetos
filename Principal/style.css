@@ -13,12 +13,14 @@ body{
 }
 #container{
   place-self: center;
+  padding: 15px;
 }
 
 .titulo{
   font-size: 2rem;
   text-align: center;
 }
+
 
 .titulo span:nth-child(1){
   padding: 5px;
