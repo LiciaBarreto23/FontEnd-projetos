@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Cards</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="imgs/icon-calculator.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body onload="preferenciausuario()">
+  <div id="mode" class="modebtn">
+    <input type="checkbox" id="mode-toggle">
+    <label id="mode-label" for="mode-toggle">
+      <span class="span"></span>
+      <span class="material-symbols-rounded sun">
+        light_mode
+      </span>
+      <span class="material-symbols-rounded moon">
+        dark_mode
+      </span>
+    </label>
+  </div>
+  <div id="container">
+    <div class="titulo">
+      <h1>Entrega confiável e eficiente </h1>
+      <h2>Energizada pela tecnologia</h2>
+      <p>Nossa inteligência artificial usa milhares de ferramentas poderosas em seu projeto para garantir seja bem sucedido.</p>
+    </div>
+    <div class="container-itens">
+      <div class="item supervisao">
+        <h3>Supervisão</h3>
+        <p>Monitora as atividades para identificar projetos bloqueados.</p>
+        <img src="imgs/icon-supervisor.svg" alt="">
+      </div>
+      <div class="item equipe">
+        <h3>Trabalho em equipe</h3>
+        <p>Analisa nossa rede de talentos para criar a equipe ideal para o seu projeto.</p>
+        <img src="imgs/icon-team-builder.svg" alt="">
+      </div>
+      <div class="item carma">
+        <h3>Carma</h3>
+        <p>Avalia regurlamente nossos talentos para garantir qualidade.</p>
+        <img src="imgs/icon-karma.svg" alt="">
+      </div>
+      <div class="item calculadora">
+        <h3>Calculadora</h3>
+        <p>Usa informações de projetos anteriores para estimar melhores entregas.</p>
+        <img src="imgs/icon-calculator.svg" alt="">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
